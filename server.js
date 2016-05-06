@@ -21,7 +21,7 @@ app.use('/uploads', express.static(__dirname + "/uploads"));
 
 
 app.get('/', function(req, res){
-    res.sendFile('index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 //Authentication

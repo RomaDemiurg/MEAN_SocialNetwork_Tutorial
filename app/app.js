@@ -1,5 +1,5 @@
 (function(){
-    angular.module('TimeWaste', ['ui.router', 'ngFileUpload'])
+    angular.module('TimeWaste', ['ui.bootstrap', 'ui.router', 'ngFileUpload'])
             .config(function($stateProvider, $urlRouterProvider){
             
             $urlRouterProvider.otherwise('/');
