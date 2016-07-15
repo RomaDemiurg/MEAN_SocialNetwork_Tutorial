@@ -1,26 +1,26 @@
 (function(){
     angular.module('TimeWaste', ['ui.bootstrap', 'ui.router', 'ngFileUpload'])
-            .config(function($stateProvider, $urlRouterProvider){
+        .config(function($stateProvider, $urlRouterProvider){
             
             $urlRouterProvider.otherwise('/');
         
             $stateProvider
-                .state('signUp', {
+            .state('signUp', {
                 url: "/signup",
                 templateUrl: "app/signup/signup.html",
                 controller: "SignupController"
             })
-                .state('editProfile', {
+            .state('editProfile', {
                 url: "/edit-profile",
                 templateUrl: "app/profile/edit-profile-view.html",
                 controller: "EditProfileController"
             })
-              .state('main', {
+            .state('main', {
                 url: "/",
                 templateUrl: "app/main/main.html",
                 controller: "MainController"
             })
-			  .state('follow', {
+			.state('follow', {
 				url: "/follow-users",
 				templateUrl: "app/follow/follow.html",
 				controller: "FollowController"
